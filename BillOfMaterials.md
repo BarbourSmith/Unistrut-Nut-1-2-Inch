@@ -2,3 +2,7 @@
 # Bill Of Materials 
  |Part|Number Needed|Price|Source| 
  |----|----------|-----|-----|
+|1/2 Inch Channel Nut|1|$1.76|https://www.mcmaster.com/3259T15/|
+|Total: |1|$1.76| |
+
+ 3xCOG MSRP: $5.27

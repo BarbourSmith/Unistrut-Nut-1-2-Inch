@@ -8,6 +8,82 @@
     "topLevel": true,
     "allAtoms": [
         {
+            "atomType": "Rectangle",
+            "name": "Rectangle",
+            "x": 0.1683748169838946,
+            "y": 0.3103448275862069,
+            "uniqueID": 378142,
+            "ioValues": [
+                {
+                    "name": "x length",
+                    "ioValue": 0.75
+                },
+                {
+                    "name": "y length",
+                    "ioValue": 1.375
+                }
+            ]
+        },
+        {
+            "atomType": "Difference",
+            "name": "Difference",
+            "x": 0.3484626647144949,
+            "y": 0.3639846743295019,
+            "uniqueID": 701484,
+            "ioValues": []
+        },
+        {
+            "atomType": "Extrude",
+            "name": "Extrude",
+            "x": 0.4758418740849195,
+            "y": 0.39463601532567044,
+            "uniqueID": 104867,
+            "ioValues": [
+                {
+                    "name": "height",
+                    "ioValue": 0.375
+                }
+            ]
+        },
+        {
+            "atomType": "Color",
+            "name": "Color",
+            "x": 0.5915080527086384,
+            "y": 0.4061302681992337,
+            "uniqueID": 958818,
+            "ioValues": [],
+            "selectedColorIndex": "5"
+        },
+        {
+            "atomType": "Circle",
+            "name": "Circle",
+            "x": 0.22620790629575402,
+            "y": 0.7739463601532567,
+            "uniqueID": 299985,
+            "ioValues": [
+                {
+                    "name": "diameter",
+                    "ioValue": 0.5
+                }
+            ]
+        },
+        {
+            "atomType": "Add BOM Tag",
+            "name": "Add BOM Tag",
+            "x": 0.7152269399707174,
+            "y": 0.5440613026819924,
+            "uniqueID": 335831,
+            "ioValues": [],
+            "BOMitem": {
+                "BOMitemName": "1/2 Inch Channel Nut",
+                "numberNeeded": 1,
+                "costUSD": 1.7559999999999998,
+                "source": "https://www.mcmaster.com/3259T15/",
+                "totalNeeded": 1,
+                "radius": 0.015384615384615385
+            }
+        },
+        {
             "atomType": "Output",
             "name": "Output",
             "x": 0.9853587115666179,
@@ -15,6 +91,50 @@
             "ioValues": []
         }
     ],
-    "allConnectors": [],
-    "fileTypeVersion": 1
+    "allConnectors": [
+        {
+            "ap1Name": "geometry",
+            "ap2Name": "geometry1",
+            "ap2Primary": false,
+            "ap1ID": 378142,
+            "ap2ID": 701484
+        },
+        {
+            "ap1Name": "geometry",
+            "ap2Name": "geometry",
+            "ap2Primary": true,
+            "ap1ID": 701484,
+            "ap2ID": 104867
+        },
+        {
+            "ap1Name": "geometry",
+            "ap2Name": "geometry",
+            "ap2Primary": true,
+            "ap1ID": 104867,
+            "ap2ID": 958818
+        },
+        {
+            "ap1Name": "geometry",
+            "ap2Name": "geometry",
+            "ap2Primary": true,
+            "ap1ID": 958818,
+            "ap2ID": 335831
+        },
+        {
+            "ap1Name": "geometry",
+            "ap2Name": "geometry2",
+            "ap2Primary": false,
+            "ap1ID": 299985,
+            "ap2ID": 701484
+        },
+        {
+            "ap1Name": "geometry",
+            "ap2Name": "number or geometry",
+            "ap2Primary": false,
+            "ap1ID": 335831
+        }
+    ],
+    "fileTypeVersion": 1,
+    "filetypeVersion": 1,
+    "circleSegmentSize": "0.1"
 }
