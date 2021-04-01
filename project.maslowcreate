@@ -30,7 +30,16 @@
             "x": 0.3484626647144949,
             "y": 0.3639846743295019,
             "uniqueID": 701484,
-            "ioValues": []
+            "ioValues": [
+                {
+                    "name": "geometry2",
+                    "ioValue": "atoms/676908/299985Circle"
+                },
+                {
+                    "name": "geometry1",
+                    "ioValue": "atoms/676908/378142Rectangle"
+                }
+            ]
         },
         {
             "atomType": "Extrude",
@@ -39,6 +48,10 @@
             "y": 0.39463601532567044,
             "uniqueID": 104867,
             "ioValues": [
+                {
+                    "name": "geometry",
+                    "ioValue": "atoms/676908/701484Difference"
+                },
                 {
                     "name": "height",
                     "ioValue": 0.375
@@ -51,7 +64,12 @@
             "x": 0.5915080527086384,
             "y": 0.4061302681992337,
             "uniqueID": 958818,
-            "ioValues": [],
+            "ioValues": [
+                {
+                    "name": "geometry",
+                    "ioValue": "atoms/676908/104867Extrude"
+                }
+            ],
             "selectedColorIndex": "5"
         },
         {
@@ -68,27 +86,17 @@
             ]
         },
         {
-            "atomType": "Add BOM Tag",
-            "name": "Add BOM Tag",
-            "x": 0.7152269399707174,
-            "y": 0.5440613026819924,
-            "uniqueID": 335831,
-            "ioValues": [],
-            "BOMitem": {
-                "BOMitemName": "1/2 Inch Channel Nut",
-                "numberNeeded": 1,
-                "costUSD": 1.7559999999999998,
-                "source": "https://www.mcmaster.com/3259T15/",
-                "totalNeeded": 1,
-                "radius": 0.015384615384615385
-            }
-        },
-        {
             "atomType": "Output",
             "name": "Output",
             "x": 0.9853587115666179,
             "y": 0.5,
-            "ioValues": []
+            "uniqueID": 572500,
+            "ioValues": [
+                {
+                    "name": "number or geometry",
+                    "ioValue": "atoms/676908/958818Color"
+                }
+            ]
         }
     ],
     "allConnectors": [
@@ -115,10 +123,10 @@
         },
         {
             "ap1Name": "geometry",
-            "ap2Name": "geometry",
-            "ap2Primary": true,
+            "ap2Name": "number or geometry",
+            "ap2Primary": false,
             "ap1ID": 958818,
-            "ap2ID": 335831
+            "ap2ID": 572500
         },
         {
             "ap1Name": "geometry",
@@ -126,12 +134,6 @@
             "ap2Primary": false,
             "ap1ID": 299985,
             "ap2ID": 701484
-        },
-        {
-            "ap1Name": "geometry",
-            "ap2Name": "number or geometry",
-            "ap2Primary": false,
-            "ap1ID": 335831
         }
     ],
     "fileTypeVersion": 1,
